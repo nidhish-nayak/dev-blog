@@ -1,10 +1,10 @@
-import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react"
 
+import * as styles from "../components/index.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
 const links = [
   {
@@ -37,6 +37,13 @@ const samplePageLinks = [
   {
     text: "Page 2",
     url: "page-2",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+  {
+    text: "Page 3",
+    url: "page-3",
     badge: false,
     description:
       "A simple example of linking to another page within a Gatsby site",
